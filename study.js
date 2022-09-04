@@ -18,3 +18,5 @@ const milliseconds = d1.getMilliseconds(); //  0-999
 const millisecondsFromEpoch = d1.getTime(); //  WARNING! milliseconds from UNIX epoch!
 
 const dayOfWeek = d1.getDay(); //  0-6 [Sun-Sat]
+
+//  Also available are UTC counterparts of the above methods
