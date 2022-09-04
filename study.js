@@ -1,7 +1,10 @@
 const now = new Date(); //  current date time
 
-const newYear = new Date(2022, 0, 1);
+//  adding arbitrary days
+now.setDate(now.getDate() + 456);
 
-const newYearIsBefore = newYear < now; //  also: >, >=, <=
+//  adding arbitrary minutes
+now.setMinutes(now.getMinutes() + 4876);
 
-const diff = now - newYear; //  difference in milliseconds; manually convert it to the units required
+//  deducting arbitrary hours
+now.setHours(now.getHours() - 73);
