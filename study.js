@@ -1,23 +1,20 @@
 //  Creating date time object
 const d1 = new Date(); //  current date time
 
-const d2 = new Date(2022, 8, 4, 7, 4, 30); //  year, month, day, hour, minute, second; month is 0-11!
-//  6, 4, 3, 2 parameters are possible in above call. month cannot be omitted.
+const year = d1.getFullYear(); //  2022
 
-const d3 = new Date('2022-09-04'); //  from ISO date string; will add timezone offset to 0:0
+const month = d1.getMonth(); //  8 for september!
 
-const d4 = new Date(1662255417528); //  from milliseconds (from UNIX epoch)
+const date = d1.getDate(); //  date of the month (1-31)
 
-console.log(d1); // for example: Sun Sep 04 2022 07:07:45 GMT+0530 (India Standard Time)
+const hour = d1.getHours(); //  0-23
 
-console.log(d1.toDateString()); //  e.g.: Sun Sep 04 2022
+const minutes = d1.getMinutes(); //  0-59
 
-console.log(d1.toISOString()); //  e.g.: 2022-09-04T01:41:51.151Z
+const seconds = d1.getSeconds(); //  0-59
 
-console.log(d1.toJSON()); //  e.g.: 2022-09-04T01:44:14.595Z
+const milliseconds = d1.getMilliseconds(); //  0-999
 
-console.log(d1.toLocaleDateString()); //  e.g.: 9/4/2022
+const millisecondsFromEpoch = d1.getTime(); //  WARNING! milliseconds from UNIX epoch!
 
-console.log(d1.toTimeString()); //  e.g.: 07:11:51 GMT+0530 (India Standard Time)
-
-console.log(d1.toUTCString()); //  e.g.: Sun, 04 Sep 2022 01:41:51 GMT
+const dayOfWeek = d1.getDay(); //  0-6 [Sun-Sat]
