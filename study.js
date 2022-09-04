@@ -2,6 +2,7 @@
 const d1 = new Date(); //  current date time
 
 const d2 = new Date(2022, 8, 4, 7, 4, 30); //  year, month, day, hour, minute, second; month is 0-11!
+//  6, 4, 3, 2 parameters are possible in above call. month cannot be omitted.
 
 const d3 = new Date('2022-09-04'); //  from ISO date string; will add timezone offset to 0:0
 
